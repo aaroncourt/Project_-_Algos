@@ -32,7 +32,7 @@ function rotateArr(arr, shiftBy){
 
     for (i = 0; i < length; i++){
         console.log(`start of loop ${i}: ${newArr}`)
-        totalShift = i + shiftBy;
+        totalShift = i + shiftBy; 
         //if shift is positive
         if (shiftBy > 0){
             if (totalShift < length){
@@ -46,9 +46,6 @@ function rotateArr(arr, shiftBy){
                 }
                 if (totalShift === 0){
                     newArr[0] = arr[i];
-                }
-                else if (totalShift < 0){
-                    newArr[i+totalShift] = arr[i];
                 }
                 else {
                     newArr[totalShift] = arr[i]
@@ -83,8 +80,8 @@ function rotateArr(arr, shiftBy){
     return console.log(`completed shift: ${newArr}`)
 }
 
-rotateArr([1,2,3], 1);
-rotateArr([1,2,3], 2);
+// rotateArr([1,2,3], 1);
+rotateArr([1,2,3,4,5], 2);
 rotateArr([1,2,3], -1);
 rotateArr([1,2,3], -2)
 
